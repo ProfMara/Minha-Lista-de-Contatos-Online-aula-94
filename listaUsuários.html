@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salas Kwitter</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="carregar()">
+
+	<center></center>
+	<div class="container">
+
+			<div class="topo">
+			<h1  class="header"> MEUS CONTATOS</h1>
+			<img src="https://cdn-icons-png.flaticon.com/512/757/757623.png" width="150px" height="150px">
+			</div>
+
+			<h3 id="userName"></h3>
+			<h3 class="texto">#Contatos</h3>
+			<div id="contatos"></div>
+	</div>
+	</center>	
+	<div class="login">
+		<label >Nome do Contato:</label>
+		<!--Essa caixa de texto serve para que o usuário escreva seu nome -->
+		<input type="text" id="contatoNome" class="form-control" placeholder="Digite aqui o nome do contato">
+		<br>
+		<label >Número do Contato:</label>
+		<input type="text" id="contatoNumero" class="form-control" placeholder="Digite aqui o número do contato">
+		<!--Esse botão serve para que o usuário logue-->
+		<button class="btn btn-primary" onclick="addContact()">Adicionar Contato</button>
+	</div>
+
+<script src="codigo.js"></script>
+</body>
+</html>
